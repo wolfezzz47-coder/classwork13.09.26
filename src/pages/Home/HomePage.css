@@ -1,9 +1,3 @@
-.Home-Page {
-    background-image: url("images/homepictures.jpg");
-    background-size: cover; /* Щоб зображення покривало весь контейнер */
-    background-position: center; /* Щоб зображення було по центру */
-    min-height: 100vh; /* Щоб компонент займав всю висоту вікна */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.home-Page {
+    background-color: blueviolet;
 }
