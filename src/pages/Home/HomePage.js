@@ -1,6 +1,7 @@
 import {useForm} from "react-hook-form";
 import {zodResolver} from "@hookform/resolvers/zod";
 import {homeSchema} from "./validation";
+import "./HomePage.css"
 
 const defoltValues = {
     name: "",
@@ -24,6 +25,7 @@ const HomePage = () => {
     }
     return (
         <>
+            <div className="Home-Page">
             <h1 className="text-center">створення продукту</h1>
             <form className={"col-md-6 offset-md-3"} onSubmit={handleSubmit(onMySubmit)}>
                 <div className="mb-3">
@@ -64,6 +66,7 @@ const HomePage = () => {
                 </div>
                 <input type="submit" className="btn btn-dark" value="створити" />
             </form>
+            </div>
         </>
     )
 }
